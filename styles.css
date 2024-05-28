@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+::placeholder {
+  color: #54bf55;
+  opacity: 1; /* Firefox */
+}
+
+::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: #54bf55;
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    356deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(87, 191, 85, 1) 0%,
+    rgba(119, 206, 120, 1) 41%,
+    rgba(167, 222, 167, 1) 100%
+  );
+
+  background-repeat: no-repeat;
+}
+
+label,
+legend {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  width: 400px;
+  padding: 5px;
+}
+
+.main {
+  margin: 100px;
+  padding: 40px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.container {
+  display: flex;
+  overflow: auto;
+  justify-content: space-between;
+}
+
+.item-left,
+.item-right {
+  margin-left: 10px;
+}
+
+button {
+  background-color: #45a646;
+  padding: 10px 250px;
+  border-radius: 5px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #54bf55;
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .main {
+    padding: 50px;
+    font-size: large;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+    background-color: white;
+  }
+
+
+  input[type=text] {
+    width: 250px;
+  }
+
+  button {
+    padding: 5px 100px;
+  }
+}
