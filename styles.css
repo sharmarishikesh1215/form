@@ -8,11 +8,10 @@
 
 ::placeholder {
   color: #54bf55;
-  opacity: 1; /* Firefox */
+  opacity: 1; 
 }
 
 ::-ms-input-placeholder {
-  /* Edge 12 -18 */
   color: #54bf55;
 }
 
@@ -60,7 +59,7 @@ input[type="text"] {
 
 button {
   background-color: #45a646;
-  padding: 10px 250px;
+  padding: 3% 25%;
   border-radius: 5px;
   color: #fff;
   border: none;
@@ -71,19 +70,35 @@ button:hover {
   background-color: #54bf55;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .container {
     flex-direction: column;
   }
 
+  .heading {
+    text-align: center!important;
+  }
+
   .main {
-    padding: 50px;
+    margin: 20px;
+    padding: 20px;
     font-size: large;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     border-radius: 8px;
     background-color: white;
   }
 
+  .drop {
+    width: 200px!important;
+  }
+
+  .age {
+    width: 310px!important;
+  }
+
+  textarea {
+    width: 310px!important;
+  }
 
   input[type=text] {
     width: 250px;
